@@ -23,7 +23,8 @@ function formatDate(timestamp) {
 
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = `<div class="row">
+  forecastElement.innerHTML = `
+           <div class="row">
               <div class="col-2">
                 <div class="weather-forecast-date">Mon</div>
                 <img
@@ -98,8 +99,9 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-let celsiusTemperature = null;
 displayForecast();
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
