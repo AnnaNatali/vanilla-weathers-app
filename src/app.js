@@ -21,7 +21,7 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast(response) {
+function displayForecast() {
   //let forecast = response.data.daily;
 
   let forecastElement = document.querySelector("#forecast");
@@ -40,8 +40,8 @@ function displayForecast(response) {
                   width="42"
                 />
                 <div class="weather-forecast-temperatures">
-                  <span class="weather-forecast-temperature-max">${forecastDay.temp.max}℃</span>
-                  <span class="weather-forecast-temperature-min">${forecastDay.temp.min}℃</span>
+                  <span class="weather-forecast-temperature-max">18℃</span>
+                  <span class="weather-forecast-temperature-min">12℃</span>
                 </div>
             </div>`;
   });
